@@ -1,9 +1,6 @@
-import dearpygui.dearpygui as dpg
+import wx
 
-class SettingsWindow:
-    def __init__(self):
-        ...
-
-    def register(self):
-        with dpg.window(tag="Settings Window", width=800, height=600):
-            ...
+class SettingsWindow(wx.Frame):
+    def __init__(self, parent=None, title="SettingsWindow"):
+        super().__init__(parent=parent, title=title)
+        

@@ -1,9 +1,6 @@
-import dearpygui.dearpygui as dpg
+import wx
 
-class MainWindow:
-    def __init__(self):
-        ...
+class MainWindow(wx.Frame):
+    def __init__(self, parent=None, title="MainWindow"):
+        super().__init__(parent=parent, title=title)
 
-    def register(self):
-        with dpg.window(tag="Main Window", width=800, height=600):
-            ...
